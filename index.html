@@ -3,9 +3,10 @@
   <title>Webex Meetings Quick Start</title>
   <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script crossorigin src="https://unpkg.com/webex@^1/umd/webex.min.js"></script>
   </head>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <body>
     <img src="webex-logo.png" width="20%" >
@@ -24,73 +25,31 @@
       </div>
     </form>
 
-
-
-<div id = "container">
-  <video autoplay="true" id="videoElement">
-    
-  </video>
-</div>
-
-<!-- 
     <div style="display: flex">
       <video style="width:50%" id="self-view" muted autoplay></video>
       <div style="width:50%">
-        <audio id="remote-view-audio" autoplay="true"></audio>
-        <video id="remote-view-video" autoplay="true"></video>
+        <audio id="remote-view-audio" autoplay></audio>
+        <video id="remote-view-video" autoplay></video>
       </div>
-    </div> -->
-
-
-
+    </div>
+    
     <div> 
-      <button id="leave"" title="hangup"  type="input">cancel/hangup</button>
+      <input id="leave"" title="hangup"  type="submit" value="cancel/hangup"></input>
     </div>
 
-    <i class="fas fa-microphone fa-3x"></i>
-  
+    <button id="testa">HELLO</button>
+    <i id="mic" class="fas fa-microphone fa-3x"></i>
       <pre>   mute</pre>
-    </i>
 
-<!-- 
-    <div> 
-      <button id="Settings"" title="Settings"  type="input" style="float:right">Settings</button>
-      <div class="list">
-        <button class = "English">English</button>
-        <button class = "English">Hindi</button>
-        <button class = "English">Spanish</button>
-        <button class = "English">German</button>
-      </div>
-    </div> -->
-
-
-
-    <div class="Settings">
-      <button class="dropbtn" style="float:right" onclick="myFunction()">Settings
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content" id="myDropdown">
-        <a href="#">English</a>
-        <a href="#">Hindi</a>
-        <a href="#">Spanish</a>
-      </div>
-      </div> 
-    </div>
-  
+    <br>
+    <br>
 
 
 
     
-
+    <!-- <script crossorigin src="https://unpkg.com/webex@^1/umd/webex.min.js"></script> -->
     
-
-
-     <!-- <img src="setting.png" width="42" height="42" style="float:right" > -->
-
-     <!-- <script crossorigin src="https://unpkg.com/webex@^1/umd/webex.min.js"></script> -->
-
-    
-    <script src="./index.js"></script>
   </body>
+
 </html>
 
